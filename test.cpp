@@ -168,7 +168,20 @@ int main()
 		{ "x+\ty=\nz", "x+\ny=\nz\n", "" },
 		{ "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n", "" },
 		{ "a b c \n \t \n", "a\nb\nc\n", "" },
-		{ "a\tb\tc\t\n\t", "a\nb\nc\n", "" }
+		{ "a\tb\tc\t\n\t", "a\nb\nc\n", "" },
+		{ "abCD", "abCD\n", "" },
+		{ "abCD12", "abCD12\n", "" },
+		{ "a\tb\nc", "a\nb\nc\n", "" },
+		{ "a\nb\tc", "a\nb\nc\n", "" },
+		{ "a \t \n b", "a\nb\n", "" },
+		{ "!", "!\n", "" },
+		{ "@ #", "@\n#\n", "" },
+		{ "$\t%", "$\n%\n", "" },
+		{ "a a", "a\na\n", "" },
+		{ "a\tb", "a\nb\n", "" },
+		{ "ok", "ok\n", "" },
+		{ " \t a \t ", "a\n", "" },
+		{ "\n\n\n\n\n", "", "" }
 	};
 
     int passed = 0;
